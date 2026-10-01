@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Asad Gohar Studio — image brief",
+  "description": "Every field is optional; anything left out falls back to src/image.config.ts. Validate with scripts/validate-props.mjs before rendering.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "format": { "enum": ["square", "portrait", "story"], "description": "1080x1080 / 1080x1350 / 1080x1920" },
+    "variant": { "enum": ["insight", "list", "stat", "quote", "showcase"] },
+    "eyebrow": { "type": "string", "description": "Uppercase kicker. Empty string hides it." },
+    "headline": { "type": "string", "maxLength": 120 },
+    "keyPhrase": { "type": "string", "description": "Substring of headline, painted in the emerald gradient." },
+    "subhead": { "type": "string" },
+    "subheadAccent": { "type": "string", "description": "Substring of subhead, solid emerald." },
+    "body": { "type": "string", "description": "insight only." },
+    "points": { "type": "array", "items": { "type": "string" }, "minItems": 3, "maxItems": 5, "description": "list only." },
+    "stat": {
+      "type": "object",
+      "properties": { "value": { "type": "string" }, "label": { "type": "string" } },
+      "description": "stat only. Real numbers only."
+    },
+    "quote": { "type": "string", "description": "quote only." },
+    "art": { "type": ["string", "null"], "description": "Path under public/, e.g. art/hero.png." },
+    "artWash": { "type": "number", "minimum": 0, "maximum": 1 },
+    "footerTags": { "type": "array", "items": { "type": "string" } }
+  }
+}

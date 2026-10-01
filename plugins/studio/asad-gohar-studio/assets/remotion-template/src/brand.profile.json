@@ -1,0 +1,22 @@
+{
+  "_canonical": "Real facts only. Asad Gohar supplied these himself. Nothing here may be invented. scripts/sync-brand.mjs mirrors this to shared/brand/profile.json.",
+  "name": "Asad Gohar",
+  "handle": "asad-gohar",
+  "designation": "Full Stack Developer",
+  "tagline": "Front to back, one stack.",
+  "bio": "Full Stack Developer | React · Node.js · TypeScript · PostgreSQL",
+  "about": "Full stack developer. Builds the interface in React and TypeScript, the API in Node.js, and the schema in PostgreSQL, and keeps the three of them agreeing with each other.",
+  "github": null,
+  "photo": null,
+  "stack": ["React", "Node.js", "TypeScript", "PostgreSQL"],
+  "tags": ["Full Stack", "Web Development"],
+  "footerRight": "Save & Share",
+  "voice": "First person, plain, practical. Writes from work actually done, not from advice read somewhere. No hype, no thread-bro rhythm, no engagement bait.",
+  "doNotClaim": [
+    "a number of years of experience, or a seniority title (senior, lead, expert)",
+    "named clients, employers, agencies, revenue or rates",
+    "follower, view, download or user counts",
+    "repository, project or commit counts",
+    "certifications, degrees or awards"
+  ]
+}

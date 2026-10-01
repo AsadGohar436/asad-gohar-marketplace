@@ -1,0 +1,20 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "asad-gohar-marketplace",
+  "version": "1.0.0",
+  "description": "Asad Gohar's studio for LinkedIn — a Claude Code plugin that renders emerald, circuit-board image stills and short videos scored with local music. One brief, three canvases (square, portrait, story), everything rendered on the machine.",
+  "owner": {
+    "name": "Asad Gohar"
+  },
+  "plugins": [
+    {
+      "name": "asad-gohar-studio",
+      "source": "./plugins/studio/asad-gohar-studio",
+      "description": "Render an image still (insight/list/stat/quote/showcase) or a short video with music — emerald on near-black, circuit-board background, Inter. Square 1080x1080, portrait 1080x1350 or story 1080x1920 from the same brief. Stills at 4x, video at 2x, all local via Remotion.",
+      "category": "content",
+      "tags": ["image", "video", "music", "remotion", "emerald", "social", "linkedin", "full-stack"],
+      "version": "1.0.0",
+      "author": { "name": "Asad Gohar" }
+    }
+  ]
+}
