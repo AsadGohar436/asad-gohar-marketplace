@@ -10,3 +10,4 @@ output/
 !.env.example
 props.json
 video.props.json
+supabase/.temp/
