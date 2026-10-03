@@ -1,0 +1,15 @@
+{
+  "format": "portrait",
+  "variant": "list",
+  "eyebrow": "Architecture Notes",
+  "headline": "Why heavy React state starts in your database",
+  "keyPhrase": "starts in your database",
+  "subhead": "The interface stays simple when the schema agrees with the product.",
+  "subheadAccent": "the schema agrees",
+  "points": [
+    "Model the schema around the product, not the temporary screen",
+    "Let PostgreSQL aggregate relational data before it hits the wire",
+    "Keep TypeScript contracts unbroken from table columns to UI props"
+  ],
+  "footerTags": ["Full Stack", "React & PostgreSQL"]
+}
