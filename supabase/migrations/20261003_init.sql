@@ -2,11 +2,11 @@
 -- PostgreSQL Migration for Supabase
 
 -- Enable UUID extension
-create extension if not exists "uuid-ossp";
+create extension if not exists "pgcrypto";
 
 -- 1. PRODUCTS TABLE
 create table if not exists public.products (
-  id uuid primary key default uuid_generate_v4(),
+  id uuid primary key default gen_random_uuid(),
   slug text unique not null,
   title text not null,
   description text not null,
@@ -25,7 +25,7 @@ create table if not exists public.products (
 
 -- 2. ORDERS TABLE
 create table if not exists public.orders (
-  id uuid primary key default uuid_generate_v4(),
+  id uuid primary key default gen_random_uuid(),
   product_id uuid references public.products(id) on delete set null,
   product_slug text not null,
   product_title text not null,
@@ -41,7 +41,7 @@ create table if not exists public.orders (
 
 -- 3. INQUIRIES TABLE
 create table if not exists public.inquiries (
-  id uuid primary key default uuid_generate_v4(),
+  id uuid primary key default gen_random_uuid(),
   name text not null,
   email text not null,
   linkedin_url text,
@@ -54,7 +54,7 @@ create table if not exists public.inquiries (
 
 -- 4. REVIEWS TABLE
 create table if not exists public.reviews (
-  id uuid primary key default uuid_generate_v4(),
+  id uuid primary key default gen_random_uuid(),
   author_name text not null,
   author_title text not null,
   linkedin_profile text,
