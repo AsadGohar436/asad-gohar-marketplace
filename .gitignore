@@ -1,4 +1,5 @@
 node_modules/
+dist/
 out/
 output/
 .remotion/
@@ -6,5 +7,6 @@ output/
 *.log
 .env
 .env.*
+!.env.example
 props.json
 video.props.json
